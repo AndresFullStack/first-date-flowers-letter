@@ -79,7 +79,7 @@ import dynamic from "next/dynamic";
 // import { Letter } from "@/components/letter";
 // import TextCursor from "@/components/TextCursor";
 import BokehBackgroundDemo from "@/components/ui/BokehBackground";
-import { FloralParticles } from "@/components/ui/FloralBackground";
+// import { FloralParticles } from "@/components/ui/FloralBackground";
 // import { useState } from "react";
 // import Confetti from "react-confetti";
 
@@ -118,7 +118,6 @@ export default function Home() {
     <main className="relative min-h-screen">
       o FloralBackgroundImages o FallingPetals
       <BokehBackgroundDemo />
-      <FloralParticles />
       <div className="relative z-10 flex items-center justify-center min-h-screen p-4">
         <div className="text-center w-full flex flex-col items-center justify-center">
           <Letter setIsOpen={setIsOpen} isOpen={isOpen} />
