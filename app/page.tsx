@@ -79,6 +79,7 @@ import dynamic from "next/dynamic";
 // import { Letter } from "@/components/letter";
 // import TextCursor from "@/components/TextCursor";
 import BokehBackgroundDemo from "@/components/ui/BokehBackground";
+import { FloralParticles } from "@/components/ui/FloralBackground";
 // import { useState } from "react";
 // import Confetti from "react-confetti";
 
@@ -115,8 +116,9 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen">
+      o FloralBackgroundImages o FallingPetals
       <BokehBackgroundDemo />
-
+      <FloralParticles />
       <div className="relative z-10 flex items-center justify-center min-h-screen p-4">
         <div className="text-center w-full flex flex-col items-center justify-center">
           <Letter setIsOpen={setIsOpen} isOpen={isOpen} />
@@ -132,12 +134,12 @@ export default function Home() {
                              shadow-xl"
             >
               <h1 className="text-lg sm:text-xl md:text-2xl text-white font-bold pb-2 sm:pb-3 md:pb-4">
-                ¡Para mi amor Wendy!
+                ¡Para mi amor!
               </h1>
               <p className="text-white text-xs sm:text-sm md:text-base leading-relaxed mb-4">
-                En este día tan especial, quiero regalarte estas flores como
-                símbolo de mi amor y aprecio por ti. Cada pétalo representa un
-                momento hermoso que hemos compartido juntos
+                En este día especial quiero recordarte que eres mi lugar seguro,
+                mi impulso y mi calma al mismo tiempo; Lo que construimos no se
+                ve, pero se siente y para mí, eso lo significa todo. 💫 ❤️
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4">
                 <button
@@ -157,7 +159,6 @@ export default function Home() {
           )}
         </div>
       </div>
-
       {confetti && windowSize.width > 0 && (
         <Confetti
           width={windowSize.width}
