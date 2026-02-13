@@ -155,11 +155,13 @@ const Letter = ({ setIsOpen, isOpen }: LetterProps) => {
               }}
             />
 
+            {/* pt-12 */}
             <div
-              className="absolute bottom-1 left-1/2 bg-white rounded-lg shadow-xl z-10 flex flex-col items-center justify-start text-center transition-all duration-1000 overflow-y-auto p-3 sm:p-4 md:p-6 lg:p-12 pt-12"
+              className={`
+  ${isOpen ? "h-[140%] md:h-[175%]" : "h-[calc(100%-0.5rem)]"} absolute bottom-1 left-1/2 bg-white rounded-lg shadow-xl z-10 flex flex-col items-center justify-start text-center transition-all duration-1000 overflow-y-auto p-3 sm:p-4 md:p-6 lg:p-12
+`}
               style={{
                 transform: "translateX(-50%)",
-                height: isOpen ? "calc(175%)" : "calc(100% - 0.5rem)",
                 width: "90%",
                 transitionDelay: isOpen ? "1250ms" : "0ms",
               }}
