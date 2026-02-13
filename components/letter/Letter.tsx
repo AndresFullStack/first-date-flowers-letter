@@ -108,15 +108,14 @@ const Letter = ({ setIsOpen, isOpen }: LetterProps) => {
               </svg>
             </div>
 
-            {/* Address */}
             <div className="text-white text-left text-xs sm:text-sm md:text-base lg:text-xl font-sans px-2">
               <p className="mb-1 sm:mb-2">
                 <span className="font-light">Para:</span>{" "}
-                <span className="font-bold">Wendy</span>
+                <span className="font-bold">Wendy Rivillas</span>
               </p>
               <p>
                 <span className="font-light">De:</span>{" "}
-                <span className="font-bold">Tu amor William</span>
+                <span className="font-bold">William Dussan</span>
               </p>
             </div>
           </div>
@@ -156,9 +155,8 @@ const Letter = ({ setIsOpen, isOpen }: LetterProps) => {
               }}
             />
 
-            {/* Letter Card */}
             <div
-              className="absolute bottom-1 left-1/2 bg-white rounded-lg shadow-xl z-10 flex flex-col items-center justify-center text-center transition-all duration-1000 overflow-y-auto p-3 sm:p-4 md:p-6 lg:p-12"
+              className="absolute bottom-1 left-1/2 bg-white rounded-lg shadow-xl z-10 flex flex-col items-center justify-start text-center transition-all duration-1000 overflow-y-auto p-3 sm:p-4 md:p-6 lg:p-12 pt-12"
               style={{
                 transform: "translateX(-50%)",
                 height: isOpen ? "calc(175%)" : "calc(100% - 0.5rem)",
@@ -208,12 +206,10 @@ const Letter = ({ setIsOpen, isOpen }: LetterProps) => {
                   alt="Flowers"
                   className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain mx-auto rounded-lg"
                 />
+                <p className="text-[9px] sm:text-xs md:text-sm lg:text-base text-gray-600 italic">
+                  Con todo mi amor, William Dussan
+                </p>
               </div>
-
-              {/* Bottom message */}
-              <p className="absolute bottom-2 sm:bottom-3 md:bottom-4 left-1/2 -translate-x-1/2 text-[9px] sm:text-xs md:text-sm lg:text-base text-gray-600 italic">
-                Con todo mi amor, William Dussan
-              </p>
             </div>
           </div>
         </div>
